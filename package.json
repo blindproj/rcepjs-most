@@ -1,0 +1,42 @@
+{
+  "name": "rcepjs-most",
+  "version": "1.0.0",
+  "description": "most.js packages for rcep.js",
+  "main": "./lib",
+  "license": "MIT",
+  "author": "",
+  "homepage": "https://github.com/blindproj/rcepjs-most#readme",
+  "bugs": {
+    "url": "https://github.com/blindproj/rcepjs-most/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blindproj/rcepjs-most.git"
+  },
+  "keywords": [],
+  "scripts": {
+    "build": "webpack && webpack --opts dev",
+    "build:es5": "webpack --opts es5 && webpack --opts dev:es5",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@most/core": "^1.3.4",
+    "@most/dom-event": "^2.0.0",
+    "@most/scheduler": "^1.2.2",
+    "most-from-array": "^1.0.2",
+    "most-from-event": "^1.1.2",
+    "most-rx-utils": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "4.29.4",
+    "webpack-cli": "3.2.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
